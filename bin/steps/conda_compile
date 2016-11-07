@@ -17,7 +17,7 @@ if [ -f conda-requirements.txt ]; then
     conda install --file conda-requirements.txt --yes | indent
 fi
 
-conda install -c https://conda.anaconda.org/menpo opencv3
+conda install -c https://conda.anaconda.org/menpo opencv3=3.1.0=py35_0
 
 if [ -f requirements.txt ]; then
     puts-step "Installing dependencies using Pip"
